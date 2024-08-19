@@ -29,7 +29,10 @@ breadth_first(Start, Goal, Visited, Path) :-
     append(Visited, [T|Extend], Visited2),
     append(Path, [T|Extend], [Next|Path2]),
     breadth_first(Next, Goal, Visited2, Path2).
-breadth_first(1, 28, [1], [])
+
+%/*this is comment:  Add this line in input section on tio.ru online compiler  and on other online compiler in query section*/
+breadth_first(1, 28, [1], []).
+
 
 
 
